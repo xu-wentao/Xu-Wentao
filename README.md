@@ -2,49 +2,61 @@
 
 # Hi, I'm Wentao Xu
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=21&duration=2600&pause=850&color=58A6FF&center=true&vCenter=true&repeat=true&width=820&height=90&lines=%24+whoami%3A+Wentao+Xu+%E2%80%94+AI+Infrastructure+Engineer;%24+focus%3A+Kubernetes+%C2%B7+GPU%2FNPU+Scheduling+%C2%B7+LLM+Serving;%24+mission%3A+Building+reliable+systems+for+AI+workloads)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=21&duration=2600&pause=850&color=58A6FF&center=true&vCenter=true&repeat=true&width=860&height=90&lines=%24+whoami%3A+Wentao+Xu+%E2%80%94+AI+Infrastructure+Engineer;%24+contributing%3A+Kubernetes+%C2%B7+Volcano+%C2%B7+Prometheus+Operator;%24+mission%3A+Building+reliable+open-source+infrastructure)](https://git.io/typing-svg)
 
 </div>
 
-Cloud-native and AI infrastructure engineer focused on building reliable platforms for large-scale computing workloads.
+Cloud-native and AI infrastructure engineer working across **Kubernetes, heterogeneous accelerator scheduling, observability, distributed systems, and LLM infrastructure**.
 
-I work across the boundary between **Kubernetes, distributed systems, observability, accelerator scheduling, and LLM infrastructure**. I enjoy turning complex infrastructure into systems that are easier to operate, understand, and evolve.
+I spend much of my engineering time studying production problems, turning them into reusable designs, and contributing the resulting improvements back to open-source communities.
 
-## What I'm working on
+## Open-source focus
 
-- Kubernetes platforms for AI training and inference
-- GPU / NPU resource management, scheduling, and device operators
-- LLM serving infrastructure and production reliability
-- Observability, alerting, incident response, and SRE engineering
-- Go-based controllers, operators, and infrastructure tooling
+- Kubernetes scheduling and resource management for AI workloads
+- Dynamic Resource Allocation (DRA), GPU / NPU devices, and multi-tenant quota control
+- Operators, controllers, observability, and production reliability
+- Cloud-native database automation and disaster recovery
+- Go-based infrastructure components and platform tooling
 
-## Current interests
+## Recent community contributions
 
-- AI-native infrastructure and agent systems
-- Kubernetes scheduling, DRA, Volcano, and heterogeneous accelerators
-- High-performance inference with vLLM, SGLang, and AIBrix
-- Platform engineering for private and large-scale clusters
-- Reliable automation with Go, Rust, TypeScript, and Python
+### Volcano
 
-## Selected repositories
+- **[Merged] [Capacity plugin support for DRA](https://github.com/volcano-sh/volcano/pull/5058)**  
+  Added queue-level quota management for Kubernetes Dynamic Resource Allocation, covering whole devices, consumable capacities, hierarchical queues, shared claims, tests, design documentation, and user guidance.
 
-- [go-engineering-practice](https://github.com/xu-wentao/go-engineering-practice) — notes and experiments on practical Go engineering
-- [grandet-agent](https://github.com/xu-wentao/grandet-agent) — exploration of efficient and cost-aware agent systems
-- [volcano-vgpu-device-plugin](https://github.com/xu-wentao/volcano-vgpu-device-plugin) — Kubernetes accelerator and vGPU-related experiments
-- [golang-sdk](https://github.com/xu-wentao/golang-sdk) — Go SDK development and integration work
+- **[In review] [Optimize PodGroup listing with FieldSelector](https://github.com/volcano-sh/volcano/pull/4876)**  
+  Uses server-side custom-resource field selectors on Kubernetes 1.31+, while retaining a compatibility fallback for older clusters.
 
-## Tech stack
+### Prometheus Operator
 
-`Kubernetes` · `Go` · `Rust` · `Python` · `TypeScript` · `React` · `Docker` · `containerd` · `Prometheus` · `Grafana` · `Volcano` · `Helm` · `Ansible`
+- **[In review] [Support basic authentication for Prometheus web servers](https://github.com/prometheus-operator/prometheus-operator/pull/7004)**  
+  Extends the operator API and generated workloads to configure server-side basic authentication from Kubernetes Secrets, including authenticated probes.
 
-## About this profile
+### Apache ShardingSphere on Cloud
 
-Most of my work centers on one question:
+Contributed features and fixes across the operator and point-in-time recovery tooling, including:
 
-> How can infrastructure remain simple and dependable while the systems running on it become increasingly complex?
+- [AWS Aurora storage-node registration and lifecycle integration](https://github.com/apache/shardingsphere-on-cloud/pull/398)
+- [Backup progress reporting for PITR workflows](https://github.com/apache/shardingsphere-on-cloud/pull/321)
+- [Environment-file support for PITR agent commands](https://github.com/apache/shardingsphere-on-cloud/pull/319)
+- [Backup metadata, PTRACK mode, and storage-node correctness fixes](https://github.com/apache/shardingsphere-on-cloud/pull/288)
+- [Chaos-test environment and controller port-conflict fixes](https://github.com/apache/shardingsphere-on-cloud/pull/348)
 
-I use this space to record experiments, study production systems, and build tools around cloud-native and AI infrastructure.
+### NVIDIA GPU Operator
+
+- [Corrected Prometheus relabeling examples in GPU Operator values](https://github.com/NVIDIA/gpu-operator/pull/1157), aligning the configuration with the expected ServiceMonitor field names.
+
+## What I care about
+
+> Infrastructure should remain understandable and dependable, even when the systems running on it become increasingly complex.
+
+I am particularly interested in work where scheduler design, Kubernetes APIs, accelerator topology, observability, and operational experience meet.
+
+## Working stack
+
+`Kubernetes` · `Go` · `DRA` · `Volcano` · `GPU / NPU` · `Prometheus` · `Grafana` · `Helm` · `containerd` · `Python` · `Rust` · `TypeScript`
 
 ---
 
-中文简介：云原生与 AI 基础设施工程师，关注 Kubernetes、异构算力调度、LLM 推理与训练平台、可观测性及 SRE 工程。
+中文简介：云原生与 AI 基础设施工程师，持续参与 Volcano、Prometheus Operator、Apache ShardingSphere on Cloud 等开源社区，关注 Kubernetes 调度、DRA、异构算力管理、可观测性以及大模型训练与推理基础设施。
