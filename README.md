@@ -1,4 +1,10 @@
+<div align="center">
+
 # Hi, I'm Wentao Xu
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=21&duration=2600&pause=850&color=58A6FF&center=true&vCenter=true&repeat=true&width=820&height=90&lines=%24+whoami%3A+Wentao+Xu+%E2%80%94+AI+Infrastructure+Engineer;%24+focus%3A+Kubernetes+%C2%B7+GPU%2FNPU+Scheduling+%C2%B7+LLM+Serving;%24+mission%3A+Building+reliable+systems+for+AI+workloads)](https://git.io/typing-svg)
+
+</div>
 
 Cloud-native and AI infrastructure engineer focused on building reliable platforms for large-scale computing workloads.
 
