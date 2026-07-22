@@ -13,39 +13,19 @@ I spend much of my engineering time studying production problems, turning them i
 ## Open-source focus
 
 - Kubernetes scheduling and resource management for AI workloads
-- Dynamic Resource Allocation (DRA), GPU / NPU devices, and multi-tenant quota control
+- Dynamic Resource Allocation, GPU / NPU devices, and multi-tenant quota control
 - Operators, controllers, observability, and production reliability
 - Cloud-native database automation and disaster recovery
 - Go-based infrastructure components and platform tooling
 
-## Recent community contributions
+## Community work
 
-### Volcano
+- **[Volcano](https://github.com/volcano-sh/volcano)** — contributing to scheduler capabilities around Kubernetes DRA, accelerator-aware quota management, queue semantics, and control-plane efficiency.
+- **[Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator)** — working on operator-managed authentication, workload generation, probes, and production-oriented observability configuration.
+- **[Apache ShardingSphere on Cloud](https://github.com/apache/shardingsphere-on-cloud)** — contributed to cloud database lifecycle automation, PITR and backup workflows, reliability fixes, and operator tooling.
+- **[NVIDIA GPU Operator](https://github.com/NVIDIA/gpu-operator)** — contributed fixes around monitoring integration and GPU observability configuration.
 
-- **[Merged] [Capacity plugin support for DRA](https://github.com/volcano-sh/volcano/pull/5058)**  
-  Added queue-level quota management for Kubernetes Dynamic Resource Allocation, covering whole devices, consumable capacities, hierarchical queues, shared claims, tests, design documentation, and user guidance.
-
-- **[In review] [Optimize PodGroup listing with FieldSelector](https://github.com/volcano-sh/volcano/pull/4876)**  
-  Uses server-side custom-resource field selectors on Kubernetes 1.31+, while retaining a compatibility fallback for older clusters.
-
-### Prometheus Operator
-
-- **[In review] [Support basic authentication for Prometheus web servers](https://github.com/prometheus-operator/prometheus-operator/pull/7004)**  
-  Extends the operator API and generated workloads to configure server-side basic authentication from Kubernetes Secrets, including authenticated probes.
-
-### Apache ShardingSphere on Cloud
-
-Contributed features and fixes across the operator and point-in-time recovery tooling, including:
-
-- [AWS Aurora storage-node registration and lifecycle integration](https://github.com/apache/shardingsphere-on-cloud/pull/398)
-- [Backup progress reporting for PITR workflows](https://github.com/apache/shardingsphere-on-cloud/pull/321)
-- [Environment-file support for PITR agent commands](https://github.com/apache/shardingsphere-on-cloud/pull/319)
-- [Backup metadata, PTRACK mode, and storage-node correctness fixes](https://github.com/apache/shardingsphere-on-cloud/pull/288)
-- [Chaos-test environment and controller port-conflict fixes](https://github.com/apache/shardingsphere-on-cloud/pull/348)
-
-### NVIDIA GPU Operator
-
-- [Corrected Prometheus relabeling examples in GPU Operator values](https://github.com/NVIDIA/gpu-operator/pull/1157), aligning the configuration with the expected ServiceMonitor field names.
+My contributions usually start from operational problems seen in real clusters: resource isolation, backward compatibility, observability, recovery workflows, or making complex platform behavior easier to operate.
 
 ## What I care about
 
@@ -53,9 +33,33 @@ Contributed features and fixes across the operator and point-in-time recovery to
 
 I am particularly interested in work where scheduler design, Kubernetes APIs, accelerator topology, observability, and operational experience meet.
 
-## Working stack
+## Engineering toolkit
 
-`Kubernetes` · `Go` · `DRA` · `Volcano` · `GPU / NPU` · `Prometheus` · `Grafana` · `Helm` · `containerd` · `Python` · `Rust` · `TypeScript`
+<div align="center">
+
+### Cloud Native & Platform
+
+[![Cloud Native](https://skillicons.dev/icons?i=kubernetes,docker,prometheus,grafana,nginx,linux&perline=6)](https://skillicons.dev)
+
+### Languages & Development
+
+[![Languages](https://skillicons.dev/icons?i=go,rust,python,ts,react,nodejs&perline=6)](https://skillicons.dev)
+
+### Delivery & Automation
+
+[![Tooling](https://skillicons.dev/icons?i=git,github,githubactions,bash,ansible,terraform&perline=6)](https://skillicons.dev)
+
+</div>
+
+<p align="center">
+  <code>Kubernetes Scheduling</code> ·
+  <code>DRA</code> ·
+  <code>Volcano</code> ·
+  <code>GPU / NPU</code> ·
+  <code>LLM Serving</code> ·
+  <code>Operators</code> ·
+  <code>SRE</code>
+</p>
 
 ---
 
